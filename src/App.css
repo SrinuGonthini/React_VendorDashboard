@@ -1,0 +1,346 @@
+*{
+  padding: 0px;
+  margin:0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  width: 100%;
+}
+#root{
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  
+}
+.Appbar{
+  display: flex;
+  width: 100%;
+}
+.Navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em;
+  background-color: black;
+  color: aqua;
+}
+
+.Navbar ul{
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.Navbar a,.Navbar button{
+  text-decoration: none;
+  color: #333;
+  border-radius: 7px;
+  background-color: rgb(43, 206, 43);
+  padding: .5em 1.5em;
+  border: none;
+}
+.Navbar a:hover,.Navbar button:hover{
+  border-radius: 15px;
+  background-color: rgb(220, 77, 77);
+  color: aqua;
+}
+li{
+  list-style: none;
+}
+.Sidebar a{
+  text-decoration: none;
+  color:black;
+  font-size: large;
+}
+.Sidebar a:hover{
+  text-decoration: underline;
+  color: rgb(43, 206, 43);
+}
+.Sidebar{
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height:91vh;
+  background-color: lightblue;
+}
+.Sidebar ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+}
+.main{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+}
+.Main{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+  width: 85%;
+}
+.page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1em;
+  width: 70%;
+  padding: 1em;
+  border: 2px solid red;
+  border-radius: 5px;
+  text-align: justify;
+  font-size: larger;
+  background-color: rgb(234, 241, 241);
+}
+.page li{
+  font-weight: 600;
+  margin-top: 1em;
+}
+.page h1{
+  text-align: center;
+}
+
+
+.LogForm,.RegForm,.ResForm{
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  background-color: rgb(237, 227, 227);
+  padding: 2em 3em;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0 0 10px red;
+}
+
+.LogForm input,.RegForm input,.ResForm input{
+  height: 40px;
+  width: 400px;
+  padding: 1em;
+  color: #333;
+  background-color: rgb(234, 241, 241);
+  border-radius: 7px;
+}
+.ResForm textarea{
+  height: 100px;
+  width: 400px;
+  padding: .5em;
+  border-radius: 7px;
+}
+.categoryCheck,.regionCheck{
+  display: flex;
+  width: 400px;
+}
+.regionCheck label,.categoryCheck label{
+  display: flex;
+  align-items: center;
+}
+
+.categoryCheck label{
+  margin-left: 5em;
+}
+
+.LogForm button,.RegForm button,.ResForm button{
+  border-radius: 7px;
+  padding:.7em 1em;
+  color: aqua;
+  background-color: black;
+  border: none;
+  font-size: medium;
+  width: 100px;
+}
+
+.LogForm span,.RegForm span{
+  padding: 0em 1em;
+}
+.One{
+  flex: 1;
+  width: 85%;
+}
+.Restaurant{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+  margin: 1em;
+  background-color: rgb(234, 241, 241);
+  border-radius: 5px;
+  border: 2px #333 solid;
+  padding: 1em;
+}
+.Resimg img{
+  width: 800px;
+  height: 85vh;
+  border-radius: 5px;
+  border: none;
+}
+.Resdetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.Resdetails span{
+  font-weight: 400;
+}
+.Products{
+  margin-top: 2em;
+}
+.Products a{
+  margin-right: 1.5em;
+  text-decoration: none;
+  background-color: black;
+  padding: .7em;
+  color: aqua;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+}
+.Products a:hover,.Add a:hover{
+  background-color:  rgb(43, 206, 43);
+}
+
+.Restaurants{
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+  padding: 1em;
+  gap: 1em;
+  border: 2px solid red;
+  background-color: rgb(237, 227, 227);
+  border-radius: 7px;
+}
+.Ressimg{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2em;
+  width: 70%;
+}
+.But,.Buts{
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+.But a{
+  text-decoration: none;
+  background-color: black;
+  color: aqua;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  font-size: medium;
+}
+.But button, .Buts button{
+  background-color: black;
+  color: aqua;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  font-size: medium;
+}
+.But a:hover{
+  background-color: rgb(43, 206, 43);
+}
+
+.But button:hover{
+  background-color: red;
+}
+.Buts button:hover{
+  background-color: rgb(43, 206, 43)
+}
+
+.Prods{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 1em;
+  gap: 1em;
+}
+.Pros img{
+  width: 200px;
+  height: 200px;
+  border: none;
+  border-radius: 5px;
+}
+.Pros{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  border: 2px solid red;
+  background-color: rgb(237, 227, 227);
+  border-radius: 3px;
+  padding: 1em;
+}
+.Prodetails{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.Prodetails a{
+  background-color: black;
+  color: aqua;
+  padding: .62em;
+  border-radius: 3px;
+  text-decoration: none;
+  border: none;
+}
+.Prodetails a:hover{
+  background-color:  rgb(43, 206, 43);
+}
+.Add{
+  border: 2px red solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(237, 227, 227);
+  height: 240px;
+  width: 418px;
+  border-radius: 3px;
+}
+.Add a{
+  text-decoration: none;
+  background-color: black;
+  color: aqua;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  font-size: medium;
+}
+
+@media (max-width: 1024px) {
+  .Prods {
+    grid-template-columns: 1fr 1fr;
+  }
+  .Resimg img{
+    width: 500px;
+  }
+  .Ressimg {
+    align-items: flex-start;
+  }
+  .Products{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .Products a{
+    width: 150px;
+  }
+}
+
