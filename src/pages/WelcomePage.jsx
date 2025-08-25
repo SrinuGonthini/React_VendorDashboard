@@ -1,4 +1,4 @@
-import chefImage from "../image/chef.png"
+import chefImage from "../assests/chef.png"
 const WelcomePage = () => {
     return(
         <div className="main">
