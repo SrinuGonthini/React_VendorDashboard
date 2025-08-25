@@ -28,7 +28,7 @@ const OneRestaurant = () => {
                 <div className="Resimg">
                     { restaurant?.image && (
                     <img
-                    src = {`http://localhost:3500/uploads/${restaurant.image}`}
+                    src = {`https://backend-node-js-foodie.onrender.com/uploads/${restaurant.image}`}
                     alt = {restaurant.restaurantName}
                     />
                 )}

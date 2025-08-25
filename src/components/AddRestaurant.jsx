@@ -198,7 +198,7 @@ const AddRestaurant = () => {
                 />
                 <label htmlFor="image"></label>
                 {id && existImage && !image && (
-                    <img src={`http://localhost:3500/uploads/${existImage}`}
+                    <img src={`https://backend-node-js-foodie.onrender.com/uploads/${existImage}`}
                     alt = "Current"
                     style={{ width: '150px', height: 'auto' }}
                     />

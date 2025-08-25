@@ -27,7 +27,7 @@ const OneItem = () => {
                 <div className="Resimg">
                     { product?.image && (
                     <img
-                    src = {`http://localhost:3500/uploads/${product.image}`}
+                    src = {`https://backend-node-js-foodie.onrender.com/uploads/${product.image}`}
                     alt = {product.productName}
                     />
                 )}
