@@ -39,7 +39,7 @@ const ViewRestaurants = () => {
                 <div className="Ressimg">
                     {rest.image && (
                     <img
-                        src={`https://backend-node-js-foodie.onrender.com/uploads/${rest.image}`}
+                        src={`http://localhost:3500/uploads/${rest.image}`}
                         alt={rest.restaurantName}
                         style={{ width: '200px', height: 'auto' }}
                     />
@@ -47,6 +47,7 @@ const ViewRestaurants = () => {
                 <div className="Resdetails">
                     <h4>Restaurant Name: <span>{rest.restaurantName}</span></h4>
                     <p><b>Area: </b>{rest.area}</p>
+                    <p><b>City: </b>{rest.city}</p>
                     <p><b>Category: </b>{rest.category.join(', ')}</p>
                 </div>
                 </div>

@@ -28,7 +28,7 @@ const OneRestaurant = () => {
                 <div className="Resimg">
                     { restaurant?.image && (
                     <img
-                    src = {`https://backend-node-js-foodie.onrender.com/uploads/${restaurant.image}`}
+                    src = {`http://localhost:3500/uploads/${restaurant.image}`}
                     alt = {restaurant.restaurantName}
                     />
                 )}
@@ -37,6 +37,7 @@ const OneRestaurant = () => {
                     <h1>Restaurant Details</h1>
                     <h2>Restaurant Name: <span>{restaurant?.restaurantName}</span></h2>
                     <h3>Area: <span>{restaurant?.area}</span></h3>
+                    <h3>City: <span>{restaurant?.city}</span></h3>
                     <p><b>Category: </b>{restaurant?.category.join(', ')}</p>
                     <p><b>Region: </b>{restaurant?.region.join(', ')}</p>
                     <p><b>Offer: </b>{restaurant?.offer}</p>

@@ -6,6 +6,7 @@ const AddRestaurant = () => {
     const {id} = useParams();
     const [restaurantName,setRestaurantName] = useState('')
     const [area,setArea] = useState('')
+    const [city,setCity] = useState('')
     const [category,setCategory] = useState([])
     const [region,setRegion] = useState([])
     const [offer,setOffer] = useState('')
@@ -24,6 +25,7 @@ const AddRestaurant = () => {
                     const data = res.data.restaurant
                     setRestaurantName(data.restaurantName || '')
                     setArea(data.area || '')
+                    setCity(data.city || '')
                     setCategory(data.category || [])
                     setRegion(data.region || [])
                     setOffer(data.offer || '')
@@ -64,6 +66,7 @@ const AddRestaurant = () => {
         const formData = new FormData();
         formData.append('restaurantName',restaurantName)
         formData.append('area',area)
+        formData.append('city',city)
         category.forEach((value)=>formData.append('category',value))
         region.forEach((value)=>formData.append('region',value))
         formData.append('offer',offer)
@@ -86,6 +89,7 @@ const AddRestaurant = () => {
                 alert("Restaurant added Successfully")
                 setRestaurantName('')
                 setArea('')
+                setCity('')
                 setCategory([])
                 setRegion([])
                 setOffer('')
@@ -120,6 +124,15 @@ const AddRestaurant = () => {
                     placeholder="Enter area" 
                     value={area}
                     onChange={(e) => setArea(e.target.value)}
+                />
+                <label htmlFor="city">City</label>
+                <input 
+                    id="city"
+                    type="text"
+                    required
+                    placeholder="Enter city" 
+                    value={city}
+                    onChange={(e) => setCity(e.target.value)}
                 />
                 <label htmlFor="category">Category</label>
                 <div className="categoryCheck">
@@ -185,7 +198,7 @@ const AddRestaurant = () => {
                 />
                 <label htmlFor="image"></label>
                 {id && existImage && !image && (
-                    <img src={`https://backend-node-js-foodie.onrender.com/uploads/${existImage}`}
+                    <img src={`http://localhost:3500/uploads/${existImage}`}
                     alt = "Current"
                     style={{ width: '150px', height: 'auto' }}
                     />
