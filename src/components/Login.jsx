@@ -21,7 +21,7 @@ const Login = ({setIsLogin}) => {
                 console.log('Need to Add Restaurant')
             }
             setIsLogin(true)
-            navigate('/home')
+            setTimeout(() =>navigate('/home'),100)
         }catch(err){
             alert("login Failed")
             console.log(err.message)
