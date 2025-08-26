@@ -40,7 +40,7 @@ const ViewItems = () => {
                     <li className="Pros" key = {item._id}>
                         {item.image && (
                             <img
-                            src = {`https://backend-node-js-foodie.onrender.com/uploads/${item.image}`}
+                            src = {item.image}
                             alt = {item.productName} />
                         )}
                         <div className="Prodetails">

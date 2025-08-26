@@ -39,7 +39,7 @@ const ViewRestaurants = () => {
                 <div className="Ressimg">
                     {rest.image && (
                     <img
-                        src={`https://backend-node-js-foodie.onrender.com/uploads/${rest.image}`}
+                        src={rest.image}
                         alt={rest.restaurantName}
                         style={{ width: '200px', height: 'auto' }}
                     />

@@ -198,9 +198,16 @@ const AddRestaurant = () => {
                 />
                 <label htmlFor="image"></label>
                 {id && existImage && !image && (
-                    <img src={`https://backend-node-js-foodie.onrender.com/uploads/${existImage}`}
+                    <img src={existImage}
                     alt = "Current"
-                    style={{ width: '150px', height: 'auto' }}
+                    style={{ width: '150px', height: 'auto', marginBottom: "10px"}}
+                    />
+                )}
+                {image && (
+                    <img
+                        src={URL.createObjectURL(image)}
+                        alt="Preview"
+                        style={{ width: "150px", height: "auto", marginBottom: "10px" }}
                     />
                 )}
                 <input 
