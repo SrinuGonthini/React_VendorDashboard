@@ -22,7 +22,7 @@ const OneItem = () => {
         }
     },[])
     return(
-        <div className="One">
+        <div className="main">
             <div className="Restaurant">
                 <div className="Resimg">
                     { product?.image && (

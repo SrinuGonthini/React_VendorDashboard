@@ -199,18 +199,19 @@ li{
 }
 .Restaurant{
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  gap: 1em;
-  margin: 1em;
+  gap: 2em;
+  width: 60%;
+  margin: 1em auto;
   background-color: rgb(234, 241, 241);
   border-radius: 5px;
   border: 2px #333 solid;
   padding: 1em;
 }
 .Resimg img{
-  width: 800px;
-  height: 85vh;
+  width: 300px;
+  height: 50vh;
   border-radius: 5px;
   border: none;
 }

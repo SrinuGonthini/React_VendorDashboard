@@ -23,7 +23,7 @@ const OneRestaurant = () => {
         }
     },[id,accessToken,location.search])
     return(
-        <div className="One">
+        <div className="main">
             <div className="Restaurant">
                 <div className="Resimg">
                     { restaurant?.image && (
