@@ -41,7 +41,7 @@ const ViewRestaurants = () => {
                     <img
                         src={rest.image}
                         alt={rest.restaurantName}
-                        style={{ width: '200px', height: 'auto' }}
+                        style={{ width: '200px', height: '200px' }}
                     />
                     )}
                 <div className="Resdetails">

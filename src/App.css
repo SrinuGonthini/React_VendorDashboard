@@ -351,8 +351,11 @@ li{
   .Prods {
     grid-template-columns: 1fr 1fr;
   }
+  .Restaurant{
+    width: 80%;
+  }
   .Resimg img{
-    width: 500px;
+    width: 400px;
   }
   .Ressimg {
     align-items: flex-start;

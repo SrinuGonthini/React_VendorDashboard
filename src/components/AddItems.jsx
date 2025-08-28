@@ -149,14 +149,14 @@ const AddItems = () => {
                 {isEditMode && existImage && !image &&(
                     <img src={existImage}
                     alt = "Current"
-                    style={{width : "150px" , height:"auto", marginBottom: "10px" }}
+                    style={{width : "150px" , height:"150px", marginBottom: "10px" }}
                     />
                 )}
                 {image && (
                     <img
                         src={URL.createObjectURL(image)}
                         alt="Preview"
-                        style={{ width: "150px", height: "auto", marginBottom: "10px" }}
+                        style={{ width: "150px", height: "150px", marginBottom: "10px" }}
                     />
                 )}
                 <input 
